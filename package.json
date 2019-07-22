@@ -6,7 +6,9 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "jest",
-    "prepublish": "tsc"
+    "prepublish": "tsc",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "keywords": [],
   "author": "",
@@ -20,9 +22,14 @@
     "@babel/preset-env": "^7.5.4",
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-typescript": "^7.3.3",
+    "@storybook/addon-actions": "^5.1.9",
+    "@storybook/addon-links": "^5.1.9",
+    "@storybook/addons": "^5.1.9",
+    "@storybook/react": "^5.1.9",
     "@types/jest": "^24.0.15",
     "@types/react": "^16.8.23",
     "babel-jest": "^24.8.0",
+    "babel-loader": "^8.0.6",
     "chai": "^4.2.0",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
